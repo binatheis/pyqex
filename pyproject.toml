@@ -4,7 +4,7 @@ build-backend = "scikit_build_core.build"
 
 [project]
 name = "pyqex"
-version = "1.0.0"
+version = "1.0.1"
 description = "Python bindings for libQEx quad mesh extraction"
 readme = "README.md"
 license = {text = "GPL-3.0-or-later"}

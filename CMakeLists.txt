@@ -141,7 +141,8 @@ if(BUILD_PYTHON_BINDINGS)
         target_compile_definitions(_pyqex PRIVATE _USE_MATH_DEFINES)
     endif()
 
-    install(TARGETS _pyqex LIBRARY DESTINATION pyqex)
+    # Install to "." because wheel.install-dir in pyproject.toml is "pyqex"
+    install(TARGETS _pyqex LIBRARY DESTINATION .)
 endif()
 
 # Demos
