@@ -88,11 +88,20 @@ target_include_directories(QEx
 
 target_link_libraries(QEx PRIVATE ${OPENMESH_LIBRARIES})
 
-# Compiler flags for exact predicates (SSE required, no x87)
+# Compiler flags for exact predicates (SSE required on x86, no x87)
+# Note: -msse flags only apply to x86/x86_64, not ARM
 if(CMAKE_CXX_COMPILER_ID MATCHES "Clang")
-    target_compile_options(QEx PRIVATE -Wall -msse -mfpmath=sse -pedantic)
+    if(CMAKE_SYSTEM_PROCESSOR MATCHES "^(x86_64|AMD64|i[3-6]86)$")
+        target_compile_options(QEx PRIVATE -Wall -msse -mfpmath=sse -pedantic)
+    else()
+        target_compile_options(QEx PRIVATE -Wall -pedantic)
+    endif()
 elseif(CMAKE_CXX_COMPILER_ID STREQUAL "GNU")
-    target_compile_options(QEx PRIVATE -Wall -msse -mfpmath=sse -pedantic -Wextra)
+    if(CMAKE_SYSTEM_PROCESSOR MATCHES "^(x86_64|AMD64|i[3-6]86)$")
+        target_compile_options(QEx PRIVATE -Wall -msse -mfpmath=sse -pedantic -Wextra)
+    else()
+        target_compile_options(QEx PRIVATE -Wall -pedantic -Wextra)
+    endif()
 elseif(MSVC)
     target_compile_definitions(QEx PRIVATE _USE_MATH_DEFINES)
     # MSVC uses SSE by default on x64, exactinit() handles precision
@@ -126,6 +135,8 @@ if(BUILD_PYTHON_BINDINGS)
         ${CMAKE_SOURCE_DIR}/src
         ${OPENMESH_INCLUDE_DIRS}
     )
+    # QEX_EXPORT_SYMBOLS needed so qex.h uses dllexport, not dllimport (for static linking)
+    target_compile_definitions(_pyqex PRIVATE QEX_EXPORT_SYMBOLS)
     if(MSVC)
         target_compile_definitions(_pyqex PRIVATE _USE_MATH_DEFINES)
     endif()
