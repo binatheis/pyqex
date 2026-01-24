@@ -6,17 +6,23 @@
 
 ## Installation
 
+### From GitHub Releases (pre-built wheels)
+
+Download the wheel for your platform from the [Releases page](https://github.com/mfagerlund/pyqex/releases), then:
+
 ```bash
-pip install pyqex
+pip install pyqex-1.0.0-cp311-cp311-win_amd64.whl  # example for Windows Python 3.11
 ```
 
-Or build from source:
+### From Source
 
 ```bash
 git clone https://github.com/mfagerlund/pyqex.git
 cd pyqex
 pip install .
 ```
+
+Requires CMake 3.15+ and a C++17 compiler. Dependencies (OpenMesh, pybind11) are fetched automatically.
 
 ## Python Usage
 
@@ -50,19 +56,11 @@ pose significant challenges to the quad extractor.
 
 Read [the paper](http://www.rwth-graphics.de/publication/204/) to learn how QEx tackles these challenges.
 
-## Building from Source
-
-The build uses FetchContent to download dependencies (OpenMesh, pybind11) automatically.
+## Building C++ Library Only
 
 ```bash
-# Clone
 git clone https://github.com/mfagerlund/pyqex.git
 cd pyqex
-
-# Install Python package
-pip install .
-
-# Or build C++ library only
 mkdir build && cd build
 cmake .. -DBUILD_DEMOS=ON
 cmake --build .
