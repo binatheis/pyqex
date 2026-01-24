@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Dev\pyqex\build\_deps\openmesh-subbuild\CMakeFiles\9639577121facf731cb75a1a9dbabcd7\openmesh-populate-mkdir.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Dev\pyqex\build\_deps\openmesh-subbuild\CMakeFiles\9639577121facf731cb75a1a9dbabcd7\openmesh-populate-download.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Dev\pyqex\build\_deps\openmesh-subbuild\CMakeFiles\9639577121facf731cb75a1a9dbabcd7\openmesh-populate-update.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Dev\pyqex\build\_deps\openmesh-subbuild\CMakeFiles\9639577121facf731cb75a1a9dbabcd7\openmesh-populate-patch.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Dev\pyqex\build\_deps\openmesh-subbuild\CMakeFiles\9639577121facf731cb75a1a9dbabcd7\openmesh-populate-configure.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Dev\pyqex\build\_deps\openmesh-subbuild\CMakeFiles\9639577121facf731cb75a1a9dbabcd7\openmesh-populate-build.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Dev\pyqex\build\_deps\openmesh-subbuild\CMakeFiles\9639577121facf731cb75a1a9dbabcd7\openmesh-populate-install.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Dev\pyqex\build\_deps\openmesh-subbuild\CMakeFiles\9639577121facf731cb75a1a9dbabcd7\openmesh-populate-test.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Dev\pyqex\build\_deps\openmesh-subbuild\CMakeFiles\52c4db5f33c9ba4a103e65995915d452\openmesh-populate-complete.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Dev\pyqex\build\_deps\openmesh-subbuild\CMakeFiles\261375556cda2650a0de68fee2838be7\openmesh-populate.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Dev\pyqex\build\_deps\openmesh-subbuild\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Dev\pyqex\build\_deps\openmesh-subbuild\CMakeFiles\openmesh-populate" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{0B1E52BB-842E-3A24-B8B3-CA16EB759174}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

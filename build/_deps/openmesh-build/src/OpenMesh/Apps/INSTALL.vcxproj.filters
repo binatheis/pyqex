@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Dev\pyqex\build\CMakeFiles\9b3ca41680ecf0e9cc92b5ac5561c2d1\INSTALL_force.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{32F8CAC5-0567-327A-985C-391234E2520F}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -13,7 +13,7 @@ pip install pyqex
 Or build from source:
 
 ```bash
-git clone https://github.com/mfagerlund/libQEx.git pyqex
+git clone https://github.com/mfagerlund/pyqex.git
 cd pyqex
 pip install .
 ```
@@ -56,7 +56,7 @@ The build uses FetchContent to download dependencies (OpenMesh, pybind11) automa
 
 ```bash
 # Clone
-git clone https://github.com/mfagerlund/libQEx.git pyqex
+git clone https://github.com/mfagerlund/pyqex.git
 cd pyqex
 
 # Install Python package

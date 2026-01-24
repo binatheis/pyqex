@@ -1,0 +1,8 @@
+# CMake generation dependency list for this directory.
+C:/Dev/pyqex/build/_deps/openmesh-src/CMakeLists.txt
+C:/Dev/pyqex/build/_deps/openmesh-src/cmake/ACGCommon.cmake
+C:/Dev/pyqex/build/_deps/openmesh-src/cmake/ACGCompiler.cmake
+C:/Dev/pyqex/build/_deps/openmesh-src/cmake/ACGOutput.cmake
+C:/Dev/pyqex/build/_deps/openmesh-src/cmake/ACGQt.cmake
+C:/Dev/pyqex/build/_deps/openmesh-src/openmesh.pc.in
+C:/Program Files/CMake/share/cmake-3.24/Modules/AddFileDependencies.cmake

@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/openmesh-populate"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/261375556cda2650a0de68fee2838be7/openmesh-populate.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/52c4db5f33c9ba4a103e65995915d452/openmesh-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/9639577121facf731cb75a1a9dbabcd7/openmesh-populate-build.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/9639577121facf731cb75a1a9dbabcd7/openmesh-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/9639577121facf731cb75a1a9dbabcd7/openmesh-populate-download.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/9639577121facf731cb75a1a9dbabcd7/openmesh-populate-install.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/9639577121facf731cb75a1a9dbabcd7/openmesh-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/9639577121facf731cb75a1a9dbabcd7/openmesh-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/9639577121facf731cb75a1a9dbabcd7/openmesh-populate-test.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/9639577121facf731cb75a1a9dbabcd7/openmesh-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"openmesh-populate"
+		],
+		"name" : "openmesh-populate"
+	}
+}

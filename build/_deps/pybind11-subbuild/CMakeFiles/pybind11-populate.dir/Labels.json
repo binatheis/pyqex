@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/pybind11-subbuild/CMakeFiles/pybind11-populate"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/pybind11-subbuild/CMakeFiles/70e87b4175348f0a422b8f4a66af5b0d/pybind11-populate.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/pybind11-subbuild/CMakeFiles/9c0ec5f2574586aab670f7635b636644/pybind11-populate-complete.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/pybind11-subbuild/CMakeFiles/17ae1c99ff65d7495fea808148a6441c/pybind11-populate-build.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/pybind11-subbuild/CMakeFiles/17ae1c99ff65d7495fea808148a6441c/pybind11-populate-configure.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/pybind11-subbuild/CMakeFiles/17ae1c99ff65d7495fea808148a6441c/pybind11-populate-download.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/pybind11-subbuild/CMakeFiles/17ae1c99ff65d7495fea808148a6441c/pybind11-populate-install.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/pybind11-subbuild/CMakeFiles/17ae1c99ff65d7495fea808148a6441c/pybind11-populate-mkdir.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/pybind11-subbuild/CMakeFiles/17ae1c99ff65d7495fea808148a6441c/pybind11-populate-patch.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/pybind11-subbuild/CMakeFiles/17ae1c99ff65d7495fea808148a6441c/pybind11-populate-test.rule"
+		},
+		{
+			"file" : "C:/Dev/pyqex/build/_deps/pybind11-subbuild/CMakeFiles/17ae1c99ff65d7495fea808148a6441c/pybind11-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"pybind11-populate"
+		],
+		"name" : "pybind11-populate"
+	}
+}

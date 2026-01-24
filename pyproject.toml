@@ -35,10 +35,10 @@ dependencies = [
 ]
 
 [project.urls]
-Homepage = "https://github.com/mfagerlund/libQEx"
-Documentation = "https://github.com/mfagerlund/libQEx"
-Repository = "https://github.com/mfagerlund/libQEx"
-Issues = "https://github.com/mfagerlund/libQEx/issues"
+Homepage = "https://github.com/mfagerlund/pyqex"
+Documentation = "https://github.com/mfagerlund/pyqex"
+Repository = "https://github.com/mfagerlund/pyqex"
+Issues = "https://github.com/mfagerlund/pyqex/issues"
 
 [tool.scikit-build]
 cmake.args = ["-DBUILD_PYTHON_BINDINGS=ON", "-DBUILD_DEMOS=OFF", "-DBUILD_SHARED_LIBS=OFF"]

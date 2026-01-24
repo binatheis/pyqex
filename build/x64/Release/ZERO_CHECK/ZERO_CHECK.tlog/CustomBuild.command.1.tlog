@@ -1,0 +1,10 @@
+^C:\DEV\PYQEX\BUILD\CMAKEFILES\B88BF73873178169ABC8FA7E2B8BA6CD\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Dev/pyqex -BC:/Dev/pyqex/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Dev/pyqex/build/QEx.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

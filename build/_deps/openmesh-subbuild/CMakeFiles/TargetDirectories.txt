@@ -1,0 +1,3 @@
+C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/openmesh-populate.dir
+C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/ALL_BUILD.dir
+C:/Dev/pyqex/build/_deps/openmesh-subbuild/CMakeFiles/ZERO_CHECK.dir
