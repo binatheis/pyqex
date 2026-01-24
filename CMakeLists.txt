@@ -19,6 +19,13 @@
 #
 
 cmake_minimum_required(VERSION 3.15)
+
+# OpenMesh 8.1 has old cmake_minimum_required, allow it with newer CMake
+if(POLICY CMP0048)
+  cmake_policy(SET CMP0048 NEW)
+endif()
+set(CMAKE_POLICY_DEFAULT_CMP0077 NEW)
+
 project(QEx VERSION 1.0.0 LANGUAGES C CXX)
 
 include(FetchContent)
