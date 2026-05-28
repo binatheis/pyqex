@@ -66,6 +66,13 @@ else()
     find_package(OpenMesh REQUIRED)
 endif()
 
+if(TARGET OpenMeshCore)
+    set_target_properties(OpenMeshCore PROPERTIES POSITION_INDEPENDENT_CODE ON)
+endif()
+if(TARGET OpenMeshTools)
+    set_target_properties(OpenMeshTools PROPERTIES POSITION_INDEPENDENT_CODE ON)
+endif()
+
 # Core library sources
 set(QEX_SOURCES
     interfaces/c/qex.cc
@@ -143,6 +150,20 @@ if(BUILD_PYTHON_BINDINGS)
 
     # Install to "." because wheel.install-dir in pyproject.toml is "pyqex"
     install(TARGETS _pyqex LIBRARY DESTINATION .)
+    if(TARGET OpenMeshCore)
+        install(TARGETS OpenMeshCore
+            LIBRARY DESTINATION lib
+            RUNTIME DESTINATION lib
+            ARCHIVE DESTINATION lib
+        )
+    endif()
+    if(TARGET OpenMeshTools)
+        install(TARGETS OpenMeshTools
+            LIBRARY DESTINATION lib
+            RUNTIME DESTINATION lib
+            ARCHIVE DESTINATION lib
+        )
+    endif()
 endif()
 
 # Demos
