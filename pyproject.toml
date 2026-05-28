@@ -42,7 +42,7 @@ Repository = "https://github.com/mfagerlund/pyqex"
 Issues = "https://github.com/mfagerlund/pyqex/issues"
 
 [tool.scikit-build]
-cmake.args = ["-DBUILD_PYTHON_BINDINGS=ON", "-DBUILD_DEMOS=OFF", "-DBUILD_SHARED_LIBS=OFF", "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"]
+cmake.args = ["-DBUILD_PYTHON_BINDINGS=ON", "-DBUILD_DEMOS=OFF", "-DBUILD_SHARED_LIBS=OFF", "-DOPENMESH_BUILD_SHARED=OFF", "-DOPENMESH_BUILD_STATIC=ON", "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"]
 wheel.packages = ["pyqex"]
 wheel.install-dir = "pyqex"
 
@@ -51,3 +51,5 @@ BUILD_PYTHON_BINDINGS = "ON"
 BUILD_DEMOS = "OFF"
 BUILD_SHARED_LIBS = "OFF"
 FETCH_OPENMESH = "ON"
+OPENMESH_BUILD_SHARED = "OFF"
+OPENMESH_BUILD_STATIC = "ON"

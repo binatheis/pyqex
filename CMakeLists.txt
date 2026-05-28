@@ -42,6 +42,7 @@ option(BUILD_DEMOS "Build demo programs" OFF)
 option(BUILD_UNIT_TESTS "Build unit tests" OFF)
 option(STL_RANGE_CHECKS "Include STL range checks in debug mode" OFF)
 option(FETCH_OPENMESH "Use FetchContent to download OpenMesh" ON)
+set(BUILD_SHARED_LIBS OFF CACHE BOOL "" FORCE)
 
 # Get OpenMesh
 if(FETCH_OPENMESH)
@@ -54,12 +55,19 @@ if(FETCH_OPENMESH)
     )
     # Configure OpenMesh build options
     set(OPENMESH_BUILD_SHARED OFF CACHE BOOL "" FORCE)
+    set(OPENMESH_BUILD_STATIC ON CACHE BOOL "" FORCE)
     set(OPENMESH_DOCS OFF CACHE BOOL "" FORCE)
     set(BUILD_APPS OFF CACHE BOOL "" FORCE)
     FetchContent_MakeAvailable(OpenMesh)
 
     set(OPENMESH_INCLUDE_DIRS ${openmesh_SOURCE_DIR}/src)
-    set(OPENMESH_LIBRARIES OpenMeshCore)
+    if(TARGET OpenMeshCoreStatic)
+        set(OPENMESH_LIBRARIES OpenMeshCoreStatic)
+    elseif(TARGET OpenMeshCore)
+        set(OPENMESH_LIBRARIES OpenMeshCore)
+    else()
+        message(FATAL_ERROR "OpenMeshCore target was not created")
+    endif()
 else()
     # Use system OpenMesh
     list(APPEND CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/cmake)
@@ -69,8 +77,14 @@ endif()
 if(TARGET OpenMeshCore)
     set_target_properties(OpenMeshCore PROPERTIES POSITION_INDEPENDENT_CODE ON)
 endif()
+if(TARGET OpenMeshCoreStatic)
+    set_target_properties(OpenMeshCoreStatic PROPERTIES POSITION_INDEPENDENT_CODE ON)
+endif()
 if(TARGET OpenMeshTools)
     set_target_properties(OpenMeshTools PROPERTIES POSITION_INDEPENDENT_CODE ON)
+endif()
+if(TARGET OpenMeshToolsStatic)
+    set_target_properties(OpenMeshToolsStatic PROPERTIES POSITION_INDEPENDENT_CODE ON)
 endif()
 
 # Core library sources
@@ -150,20 +164,6 @@ if(BUILD_PYTHON_BINDINGS)
 
     # Install to "." because wheel.install-dir in pyproject.toml is "pyqex"
     install(TARGETS _pyqex LIBRARY DESTINATION .)
-    if(TARGET OpenMeshCore)
-        install(TARGETS OpenMeshCore
-            LIBRARY DESTINATION lib
-            RUNTIME DESTINATION lib
-            ARCHIVE DESTINATION lib
-        )
-    endif()
-    if(TARGET OpenMeshTools)
-        install(TARGETS OpenMeshTools
-            LIBRARY DESTINATION lib
-            RUNTIME DESTINATION lib
-            ARCHIVE DESTINATION lib
-        )
-    endif()
 endif()
 
 # Demos
