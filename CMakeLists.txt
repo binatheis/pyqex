@@ -52,6 +52,7 @@ if(FETCH_OPENMESH)
         GIT_REPOSITORY https://gitlab.vci.rwth-aachen.de:9000/OpenMesh/OpenMesh.git
         GIT_TAG OpenMesh-8.1
         GIT_SHALLOW TRUE
+        EXCLUDE_FROM_ALL
     )
     # Configure OpenMesh build options
     set(OPENMESH_BUILD_SHARED OFF CACHE BOOL "" FORCE)
